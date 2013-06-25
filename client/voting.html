@@ -1,151 +1,111 @@
 <head>
-  <meta charset="utf-8">
-  <title>Wii-based Voting Experience</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Kate Liu">
+    <meta charset="utf-8">
+    <title>Wii-based Voting Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Kate Liu">
 </head>
 
 <body>
-  {{> container}}
+    {{> container}}
 </body>
 
 <template name="container">
-  <div class="container">
-    {{> navbar}}
-    {{> content}}
-    {{> footer}}
-  </div>
+    <div class="container">
+        {{> navbar}}
+        {{> content}}
+        {{> footer}}
+    </div>
 </template>
 
 <template name="navbar">
     <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="container">
-        
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="#">E-Voting System</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li id="home" class="active"><a href="#home">Home</a></li>
-                <li id="calibrate"><a href="#calibrate">Calibrate</a></li>
-                <li id="vote"><a href="#vote">Vote</a></li>
-                <li id="review"><a href="#review">Review</a></li>
-                <li id="send"><a href="#send">Send</a></li>
-                <li id="help"><a href="#help">Help</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
-      </div> <!-- /.container -->
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="#">E-Voting System</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li id="home" class="active"><a href="#home">Home</a></li>
+                            <li id="vote"><a href="#vote">Vote</a></li>
+                            <li id="review"><a href="#review">Review</a></li>
+                            <li id="help"><a href="#help">Help</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 </template>
 
 <template name="content">
-  {{#if showHome}}
-    {{> home}}
-  {{/if}}
-  {{#if showCalibrate}}
-    {{> calibrate}}
-  {{/if}}
-  {{#if showVote}}
-    {{> vote}}
-  {{/if}}
+    {{#if showHome}}
+        {{> home}}
+    {{/if}}
+    {{#if showVote}}
+        {{> vote}}
+    {{/if}}
+    {{#if showReview}}
+        {{> review}}
+    {{/if}}
+    {{#if showHelp}}
+        {{> help}}
+    {{/if}}
 </template>
 
 <template name="home">
-  <div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="item active">
+    <div class="jumbotron masthead">
         <div class="container">
-          <div class="carousel-caption">
-            <h1>Welcome to E-voting System</h1>
-            <p class="lead">Welcome to E-voting System</p>
-          </div>
+            <h1>Wii-based Voting</h1>
+            <p>Rich voting interfaces with WiiMote</p>
         </div>
-      </div>
     </div>
-  </div>
-</template>
-
-<template name="calibrate">
-  <div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Calibration of Button Click</h1>
-            <p class="lead">Please click any button</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Calibration of Left Swipe</h1>
-            <p class="lead">Please swipe your wii remote to your left</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Calibration of Right Swipe</h1>
-            <p class="lead">Please swipe your wii remote to your right</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-  </div>
 </template>
 
 <template name="vote">
-  <div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Ang Lee</h1>
-            <p class="lead">Ang Lee is a Taiwanese-born American film director, screenwriter and producer. Throughout his career, Ang Lee has sought to explore complex themes in his movies.</p>
-          </div>
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            {{#each candidates}}
+                <div class="{{isActive}}">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <img src="{{photoUrl}}">
+                            </div>
+                            <div class="span8">
+                                <div class="carousel-caption">
+                                    <h1>{{name}}</h1>
+                                    <p class="lead">{{description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
         </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Christopher Nolan</h1>
-            <p class="lead">Christopher Jonathan James Nolan is a British-American film director, screenwriter, and producer. In his filmmaking career, Nolan has alternated between large-scale epics such as The Dark Knight Trilogy (2005–2012) and Inception (2010), and smaller psychological thrillers such as Memento (2000) and The Prestige (2006).</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Steven Spielberg</h1>
-            <p class="lead">Steven Allan Spielberg is an American film director, screenwriter, producer, and studio entrepreneur. In a career of more than four decades, Spielberg's films have covered many themes and genres.</p>
-          </div>
-        </div>
-     </div>
-    </div>
-    <a id="left" class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a id="right" class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-  </div><!-- /.carousel -->
+        <a id="left" class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a id="right" class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+</template>
+
+<template name="review">
+</template>
+
+<template name="help">
 </template>
 
 <template name="footer">
-  <div class="container marketing">
-    <footer>
-      <p>&copy; 2013 CMUSV</p>
-    </footer>
-  </div>
+    <div class="container marketing">
+        <footer>
+            <p>&copy; 2013 CMUSV</p>
+        </footer>
+    </div>
 </template>
