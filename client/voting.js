@@ -89,7 +89,7 @@ Template.container.rendered = function (e) {
             case 75:
             case 107:
                 // K or k: down
-                $('.active').click();;
+                $('.active').toggleClass("selected");
                 break;
             case 65:
             case 97:
