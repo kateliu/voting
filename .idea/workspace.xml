@@ -5,23 +5,23 @@
     <ignored path="voting.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372048458481" ignored="false" />
-    <file path="/voting.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668584056" ignored="false" />
+    <file path="/voting.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669913997" ignored="false" />
     <file path="/service.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372118134128" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app/server/service.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372101825615" ignored="false" />
     <file path="/voting.html" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668538927" ignored="false" />
     <file path="/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668621535" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/docs.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372641628329" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap-responsive.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668348503" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372666373488" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669977659" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/livedata/livedata_server.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372118450153" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/meteor/server_environment.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372118741901" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/meteor/client_environment.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372119970437" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/voting.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372125019158" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668984920" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669307163" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668348503" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap-override.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668348503" ignored="false" />
     <file path="/docs.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372135010711" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/templating/deftemplate.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372663026026" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/templating/deftemplate.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669455028" ignored="false" />
     <file path="/a.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372215099060" ignored="false" />
     <file path="/a.html" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372215102998" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app.json" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372641628329" ignored="false" />
@@ -56,7 +56,7 @@
           <file leaf-file-name="voting.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/voting.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="116" column="58" selection-start="4235" selection-end="4235" vertical-scroll-proportion="0.3478261">
+                <state line="112" column="84" selection-start="4136" selection-end="4136" vertical-scroll-proportion="1.6719368">
                   <folding />
                 </state>
               </provider>
@@ -66,19 +66,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="voting.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="voting.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/voting.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="92" column="21" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-26.576923">
+                <state line="40" column="52" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.729927">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="voting.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="voting.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/voting.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="126" column="17" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.74712646">
+                <state line="95" column="86" selection-start="2287" selection-end="2287" vertical-scroll-proportion="-54.807693">
                   <folding />
                 </state>
               </provider>
@@ -99,8 +99,8 @@
         <option value="$PROJECT_DIR$/server/service.js" />
         <option value="$PROJECT_DIR$/client/docs.css" />
         <option value="$PROJECT_DIR$/client/voting.html" />
-        <option value="$PROJECT_DIR$/client/voting.js" />
         <option value="$PROJECT_DIR$/client/voting.css" />
+        <option value="$PROJECT_DIR$/client/voting.js" />
       </list>
     </option>
   </component>
@@ -441,23 +441,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/voting.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="86" selection-start="2287" selection-end="2287" vertical-scroll-proportion="-54.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/voting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="58" selection-start="4235" selection-end="4235" vertical-scroll-proportion="0.3478261">
+        <state line="112" column="84" selection-start="4136" selection-end="4136" vertical-scroll-proportion="1.6719368">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/voting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="21" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-26.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/voting.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="17" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.74712646">
+        <state line="40" column="52" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.729927">
           <folding />
         </state>
       </provider>
