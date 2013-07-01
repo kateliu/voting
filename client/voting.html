@@ -11,32 +11,30 @@
 </body>
 
 <template name="container">
-    <div class="container">
-        {{> navbar}}
-        {{> content}}
-        {{> footer}}
-    </div>
+    {{> navbar}}
+    {{> content}}
+    {{> footer}}
 </template>
 
 <template name="navbar">
     <div class="navbar-wrapper">
-        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
-            <div class="navbar navbar-inverse">
+            <div class="navbar navbar-inverse navbar-fixed-top">
                 <div class="navbar-inner">
-                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li id="home" class="active"><a href="#home">Home<img src="right_arrow.png"></a></li>
-                            <li id="intro"><a href="#intro">Introduction<img src="right_arrow.png"></a></li>
-                            <li id="vote"><a href="#vote">Vote<img src="right_arrow.png"></a></li>
-                            <li id="review"><a href="#review">Review</a></li>
+                            <li id="home" class="active"><a href="#home">Home</a></li>
+	                        <li ><img src="right_arrow.png"></li>
+                            <li id="intro"><a href="#intro">Introduction</a></li>
+	                        <li ><img src="right_arrow.png"></li>
+                            <li id="vote"><a href="#vote">Vote</a></li>
+	                        <li ><img src="right_arrow.png"></li>
+	                        <li id="review"><a href="#review">Review</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!-- /.navbar-inner -->
@@ -46,84 +44,91 @@
 </template>
 
 <template name="content">
-    {{#if showHome}}
-        {{> home}}
-    {{/if}}
-    {{#if showIntro}}
-    {{> intro}}
-    {{/if}}
-    {{#if showVote}}
-        {{> vote}}
-    {{/if}}
-    {{#if showReview}}
-        {{> review}}
-    {{/if}}
+	<div class="container">
+	    {{#if showHome}}
+	        {{> home}}
+	    {{/if}}
+	    {{#if showIntro}}
+	    {{> intro}}
+	    {{/if}}
+	    {{#if showVote}}
+	        {{> vote}}
+	    {{/if}}
+	    {{#if showReview}}
+	        {{> review}}
+	    {{/if}}
+	</div>
 </template>
 
 <template name="home">
-    <div class="jumbotron masthead">
-        <div class="container">
-            <h1>Wii-based Voting</h1>
-            <p>Rich voting experience with WiiMote</p>
-        </div>
-    </div>
+	<div class="hero-unit">
+		<h1>Wii-based Voting</h1>
+		<p>Rich voting experience with WiiMote</p>
+	</div>
 </template>
 
 <template name="intro">
-    <div class="container">
-        <!-- Main hero unit for a primary marketing message or call to action -->
-        <div class="hero-unit">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        </div>
+	<div class="hero-unit">
+		<h1>Hello, world!</h1>
+		<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+	</div>
 
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="span4">
-                <h2>Swipe Left</h2>
-                <div class="row">
-                    <div class="span2">
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    </div>
-                    <div class="span2">wrewrwe</div>
-                </div>
-            </div>
-            <div class="span4">
-                <h2>Swipe Right</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div>
-            <div class="span4">
-                <h2>Swipe Down</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-        </div>
-    </div>
+	<div class="row">
+		<div class="span4">
+			<h2>Swipe Left</h2>
+			<div class="row">
+				<div class="span2">
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+				<div class="span2">wrewrwe</div>
+			</div>
+		</div>
+		<div class="span4">
+			<h2>Swipe Right</h2>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		</div>
+		<div class="span4">
+			<h2>Swipe Down</h2>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		</div>
+	</div>
 </template>
 
 <template name="vote">
     <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
-            {{#each candidates}}
-                <div class="{{isActive}}">
-                    <div class="container-fluid">
-                        <div class="row-fluid">
-                            <div class="span4">
-                                <img src="{{photoUrl}}">
-                            </div>
-                            <div class="span8">
-                                <div class="carousel-caption">
-                                    <h1>{{name}}</h1>
-                                    <p class="lead">{{description}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {{/each}}
+	        {{> candidateInfo}}
         </div>
         <a id="left" class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a id="right" class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
+</template>
+
+<template name="candidateInfo">
+	{{#each candidates}}
+		<div id="candidate" class="item">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span4">
+						<img src="{{photoUrl}}">
+					</div>
+					<div class="span8">
+						<div class="row">
+							<div class="carousel-selection">
+								<img src="voted.png">
+							</div>
+						</div>
+						<div class="row">
+							<div class="carousel-caption">
+								<h1>{{name}}</h1>
+								<p class="lead">{{description}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/each}}
 </template>
 
 <template name="review">

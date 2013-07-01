@@ -8,6 +8,9 @@
       color: #5a5a5a;
     }
 
+    .container {
+		padding-top: 100px;
+    }
 
 
     /* CUSTOMIZE THE NAVBAR
@@ -45,11 +48,12 @@
 
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
-      padding: 15px 5px;
+      padding: 20px 40px;
+	  font-size: 24px;
     }
-    .navbar .nav > li > a > img {
-      padding: 0px 15px;
-      width: 20px;
+    .navbar .nav > li > img {
+      padding: 20px 10px;
+      width: 25px;
     }
     /* Offset the responsive button for proper vertical alignment */
     .navbar .btn-navbar {
@@ -98,7 +102,7 @@
 
     .carousel-caption {
       background-color: transparent;
-      position: static;
+      position: relative;
       max-width: 550px;
       padding: 0 20px;
       margin-top: 200px;
@@ -114,7 +118,18 @@
       margin-top: 10px;
     }
 
+    .carousel-selection {
+	    display: none;
+	    position: static;
+    }
 
+    .carousel-selection img {
+	    height: 30%;
+    }
+
+    .checked {
+	    display: block;
+    }
 
     /* MARKETING CONTENT
     -------------------------------------------------- */

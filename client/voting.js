@@ -1,6 +1,7 @@
 Candidates = new Meteor.Collection('candidates');
+
 Deps.autorun(function () {
-    Meteor.subscribe("candidates", Session.get("roomId"));
+    Meteor.subscribe("candidates");
 });
 
 Session.setDefault("page", "home");
@@ -28,7 +29,7 @@ Template.content.showReview = function () {
 
 
 Template.navbar.events({
-    'click li' : function (e) {
+    'click li a' : function (e) {
         $('.nav .active').removeClass('active');
         e.currentTarget.classList.add('active');
     },
@@ -43,7 +44,6 @@ Template.navbar.events({
     'click #vote' : function (e) {
         console.log("vote");
         Session.set("page", "vote");
-        Session.set("firstItem", true);
     },
     'click #review' : function (e) {
         console.log("review");
@@ -57,19 +57,12 @@ Template.vote.events({
     }
 });
 
-Template.vote.candidates = function () {
+Template.candidateInfo.candidates = function () {
     return Candidates.find();
 };
 
-Template.vote.isActive = function () {
-    console.log("isActive");
-    var isFirstItem =  Session.get("firstItem");
-    Session.set("firstItem", false);
-    console.log(isFirstItem);
-    return isFirstItem?"item active":"item";
-};
-
-Template.container.rendered = function (e) {
+Template.candidateInfo.rendered = function () {
+    $("#candidate").first().addClass("active");
     $('body').on('keypress', function (e) {
         var code = e.keyCode || e.which;
         var page = Session.get("page");
@@ -90,30 +83,60 @@ Template.container.rendered = function (e) {
             case 107:
                 // K or k: down
                 $('.active').toggleClass("selected");
-                break;
-            case 65:
-            case 97:
-                // A or a: tab
-                if (page === "home") {
-                    console.log("going to click on intro");
-                    $('#intro').click();
-                }
-                else if (page === "intro") {
-                    console.log("going to click on vote");
-                    $('#vote').click();
-                }
-                else if (page === "vote") {
-                    console.log("going to click on review");
-                    $('#review').click();
-                }
-                else if (page === "review") {
-                    console.log("going to click on home");
-                    $('#home').click();
-                }
+                $('.active .carousel-selection').toggleClass("checked");
                 break;
             default:
                 break;
         }
     });
 };
+
+
+//Template.container.rendered = function (e) {
+//    $('body').on('keypress', function (e) {
+//        var code = e.keyCode || e.which;
+//        var page = Session.get("page");
+//        console.log(page);
+//        console.log(e.keyCode);
+//        switch (code) {
+//            case 72:
+//            case 104:
+//                // H or h: left
+//                $('#left').click();
+//                break;
+//            case 76:
+//            case 108:
+//                // L or l" right
+//                $('#right').click();
+//                break;
+//            case 75:
+//            case 107:
+//                // K or k: down
+//                $('.active').toggleClass("selected");
+//                break;
+//            case 65:
+//            case 97:
+//                // A or a: tab
+//                if (page === "home") {
+//                    console.log("going to click on intro");
+//                    $('#intro').click();
+//                }
+//                else if (page === "intro") {
+//                    console.log("going to click on vote");
+//                    $('#vote').click();
+//                }
+//                else if (page === "vote") {
+//                    console.log("going to click on review");
+//                    $('#review').click();
+//                }
+//                else if (page === "review") {
+//                    console.log("going to click on home");
+//                    $('#home').click();
+//                }
+//                break;
+//            default:
+//                break;
+//        }
+//    });
+//};
 
