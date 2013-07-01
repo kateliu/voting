@@ -61,7 +61,6 @@
     }
 
 
-
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
@@ -91,7 +90,7 @@
       height: 500px;
     }
 	.carousel .item.selected {
-		background-color: #E9DC51;
+		background-color: #dbe981;
 	}
     .carousel img {
       position: absolute;

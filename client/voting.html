@@ -34,7 +34,7 @@
 	                        <li ><img src="right_arrow.png"></li>
                             <li id="vote"><a href="#vote">Vote</a></li>
 	                        <li ><img src="right_arrow.png"></li>
-	                        <li id="review"><a href="#review">Review</a></li>
+	                        <li id="done"><a href="#done">Done</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!-- /.navbar-inner -->
@@ -54,8 +54,8 @@
 	    {{#if showVote}}
 	        {{> vote}}
 	    {{/if}}
-	    {{#if showReview}}
-	        {{> review}}
+	    {{#if showDone}}
+	        {{> done}}
 	    {{/if}}
 	</div>
 </template>
@@ -154,7 +154,11 @@
 	{{/each}}
 </template>
 
-<template name="review">
+<template name="done">
+	<div class="hero-unit">
+		<h1>Thank you for your participation.</h1>
+		<p>The voting process is already done.</p>
+	</div>
 </template>
 
 <template name="footer">

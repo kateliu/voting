@@ -6,6 +6,7 @@ Deps.autorun(function () {
 
 Session.setDefault("page", "home");
 Session.setDefault("voted", false);
+Session.setDefault("name", "");
 
 Template.content.showHome = function () {
     return Session.equals("page", "home");
@@ -19,12 +20,12 @@ Template.content.showVote = function () {
     return Session.equals("page", "vote");
 }
 
-Template.content.showReview = function () {
-    return Session.equals("page", "review");
+Template.content.showDone = function () {
+    return Session.equals("page", "done");
 }
 
 Template.navbar.events({
-    'click li a' : function (e) {
+    'click' : function (e) {
         $('.nav .active').removeClass('active');
         e.currentTarget.classList.add('active');
     },
@@ -40,9 +41,9 @@ Template.navbar.events({
         console.log("vote");
         Session.set("page", "vote");
     },
-    'click #review' : function (e) {
-        console.log("review");
-        Session.set("page", "review");
+    'click #done' : function (e) {
+        console.log("done");
+        Session.set("page", "done");
     }
 });
 
@@ -57,22 +58,26 @@ Template.navbar.rendered = function (e) {
             if (page === "home") {
                 console.log("going to click on intro");
                 $('#intro').click();
+                $('#home').bind('click', function(e) {
+                    e.preventDefault();
+                    return false;
+                });
             }
             else if (page === "intro") {
                 console.log("going to click on vote");
                 $('#vote').click();
             }
             else if (page === "vote") {
-                console.log("going to click on review");
+                console.log("going to click on done");
                 var isVoted = Session.get("voted");
                 if (isVoted) {
-                    $('#review').click();
+                    $('#done').click();
                 }
                 else {
                     $('#votingAlert').show();
                 }
             }
-            else if (page === "review") {
+            else if (page === "done") {
                 console.log("showing a confirm box");
             }
         }
