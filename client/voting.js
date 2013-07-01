@@ -5,6 +5,7 @@ Deps.autorun(function () {
 });
 
 Session.setDefault("page", "home");
+Session.setDefault("voted", false);
 
 Template.content.showHome = function () {
     return Session.equals("page", "home");
@@ -63,7 +64,13 @@ Template.navbar.rendered = function (e) {
             }
             else if (page === "vote") {
                 console.log("going to click on review");
-                $('#review').click();
+                var isVoted = Session.get("voted");
+                if (isVoted) {
+                    $('#review').click();
+                }
+                else {
+                    $('#votingAlert').show();
+                }
             }
             else if (page === "review") {
                 console.log("showing a confirm box");
@@ -72,11 +79,9 @@ Template.navbar.rendered = function (e) {
     });
 };
 
-Template.vote.events({
-    'click .active' : function (e) {
-        console.log("active item");
-    }
-});
+Template.vote.rendered = function () {
+    $('#votingAlert').hide();
+};
 
 Template.candidateInfo.candidates = function () {
     return Candidates.find();
@@ -104,8 +109,12 @@ Template.candidateInfo.rendered = function () {
             case 75:
             case 107:
                 // K or k: down
+                var isVoted = Session.get("voted");
+                Session.set("voted", !isVoted);
                 $('.active').toggleClass("selected");
                 $('.active .carousel-selection').toggleClass("checked");
+                $('#candidate:not(.active)').removeClass("selected");
+                $('#candidate:not(.active) .carousel-selection').removeClass("checked");
                 break;
             default:
                 break;

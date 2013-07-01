@@ -123,13 +123,22 @@
 	    position: static;
     }
 
+	.carousel-selection.checked{
+		display: block;
+	}
+
     .carousel-selection img {
 	    height: 30%;
     }
 
-    .checked {
-	    display: block;
-    }
+
+	/* CUSTOMIZE THE HERO-UNIT
+	-------------------------------------------------- */
+	.hero-unit p {
+		padding-top: 15px;
+		font-size: 24px;
+	}
+
 
     /* MARKETING CONTENT
     -------------------------------------------------- */

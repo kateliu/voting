@@ -5,21 +5,21 @@
     <ignored path="voting.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372048458481" ignored="false" />
-    <file path="/voting.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669913997" ignored="false" />
+    <file path="/voting.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672854191" ignored="false" />
     <file path="/service.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372118134128" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app/server/service.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372101825615" ignored="false" />
-    <file path="/voting.html" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668538927" ignored="false" />
-    <file path="/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668621535" ignored="false" />
+    <file path="/voting.html" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672286842" ignored="false" />
+    <file path="/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672198567" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/docs.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372641628329" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap-responsive.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668348503" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669977659" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap-responsive.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672167393" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/jquery/jquery.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672875055" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/livedata/livedata_server.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372118450153" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/app/packages/meteor/server_environment.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372118741901" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/meteor/client_environment.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372119970437" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/voting.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372125019158" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669307163" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668348503" ignored="false" />
-    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap-override.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372668348503" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/client/voting.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672167393" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672875055" ignored="false" />
+    <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/bootstrap/css/bootstrap-override.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372672167393" ignored="false" />
     <file path="/docs.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372135010711" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/static_cacheable/packages/templating/deftemplate.js" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372669455028" ignored="false" />
     <file path="/a.css" changelist="b3c10764-ec79-4aed-99df-136ace711e44" time="1372215099060" ignored="false" />
@@ -56,7 +56,7 @@
           <file leaf-file-name="voting.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/voting.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="112" column="84" selection-start="4136" selection-end="4136" vertical-scroll-proportion="1.6719368">
+                <state line="30" column="49" selection-start="1034" selection-end="1035" vertical-scroll-proportion="0.67193675">
                   <folding />
                 </state>
               </provider>
@@ -69,7 +69,7 @@
           <file leaf-file-name="voting.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/voting.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="52" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.729927">
+                <state line="71" column="53" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.23722628">
                   <folding />
                 </state>
               </provider>
@@ -78,7 +78,7 @@
           <file leaf-file-name="voting.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/voting.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="86" selection-start="2287" selection-end="2287" vertical-scroll-proportion="-54.807693">
+                <state line="40" column="25" selection-start="1068" selection-end="1068" vertical-scroll-proportion="-13.384615">
                   <folding />
                 </state>
               </provider>
@@ -441,23 +441,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/voting.css">
+    <entry file="file://$PROJECT_DIR$/client/voting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="86" selection-start="2287" selection-end="2287" vertical-scroll-proportion="-54.807693">
+        <state line="30" column="49" selection-start="1034" selection-end="1035" vertical-scroll-proportion="0.67193675">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/voting.html">
+    <entry file="file://$PROJECT_DIR$/client/voting.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="84" selection-start="4136" selection-end="4136" vertical-scroll-proportion="1.6719368">
+        <state line="40" column="25" selection-start="1068" selection-end="1068" vertical-scroll-proportion="-13.384615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/voting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="52" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.729927">
+        <state line="71" column="53" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.23722628">
           <folding />
         </state>
       </provider>
