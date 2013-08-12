@@ -17,6 +17,11 @@
 </template>
 
 <template name="navbar">
+	<audio id="audioHome" src="home.mp3"></audio>
+	<audio id="audioIntro" src="introduction.mp3"></audio>
+	<audio id="audioVote" src="vote.mp3"></audio>
+	<audio id="audioResolve" src="resolve.mp3"></audio>
+
     <div class="navbar-wrapper">
         <div class="container">
             <div class="navbar navbar-inverse navbar-fixed-top">
@@ -62,48 +67,48 @@
 
 <template name="home">
 	<div class="hero-unit">
-		<h1>Wii-based Voting</h1>
-		<p>Rich voting experience with WiiMote</p>
+		<h1>Wiimote Voting</h1>
+		<p>Rich voting experience with Wiimote</p>
 	</div>
 </template>
 
 <template name="intro">
 	<div class="hero-unit">
 		<h1>Hello, Friend!</h1>
-		<p>Three gestures will be used in the following voting process.</p>
+		<p>Three buttons will be used in the following voting process.</p>
 	</div>
 
 	<div class="row">
 		<div class="span4">
-			<h2>Swipe Left</h2>
+			<h2>Press Left</h2>
 			<div class="row">
 				<div class="span2">
-					<p>Go back to see the previous candidate</p>
+					<p>Go back to view the previous candidate's information</p>
 				</div>
 				<div class="span2">
-					<img src="swipe_left.png">
+					<img src="button_back.png">
 				</div>
 			</div>
 		</div>
 		<div class="span4">
-			<h2>Swipe Right</h2>
+			<h2>Press Right</h2>
 			<div class="row">
 				<div class="span2">
-					<p>Move forward to see the next candidate</p>
+					<p>Move forward to view the next candidate's information</p>
 				</div>
 				<div class="span2">
-					<img src="swipe_right.png">
+					<img src="button_next.png">
 				</div>
 			</div>
 		</div>
 		<div class="span4">
-			<h2>Swipe Down</h2>
+			<h2>Press Down</h2>
 			<div class="row">
 				<div class="span2">
 					<p>Select/Deselect the current candidate</p>
 				</div>
 				<div class="span2">
-					<img src="swipe_down.png">
+					<img src="button_cast.png">
 				</div>
 			</div>
 		</div>
@@ -128,6 +133,12 @@
 </template>
 
 <template name="candidateInfo">
+	<audio id="audioCast" src="cast.mp3"></audio>
+	<audio id="audioCancel" src="cancel.mp3"></audio>
+	<audio id="audioPrevious" src="previous.mp3"></audio>
+	<audio id="audioNext" src="next.mp3"></audio>
+	<audio id="audioError" src="error.mp3"></audio>
+
 	{{#each candidates}}
 		<div id="candidate" class="item">
 			<div class="container-fluid">

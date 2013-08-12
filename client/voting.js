@@ -55,6 +55,7 @@ Template.navbar.rendered = function (e) {
         console.log(e.keyCode);
         if (code === 97) {
             // A or a: tab
+            var audio;
             if (page === "home") {
                 console.log("going to click on intro");
                 $('#intro').click();
@@ -62,20 +63,28 @@ Template.navbar.rendered = function (e) {
                     e.preventDefault();
                     return false;
                 });
+                audio = document.getElementById('audioIntro');
+                audio.play();
             }
             else if (page === "intro") {
                 console.log("going to click on vote");
                 $('#vote').click();
+                audio = document.getElementById('audioVote');
+                audio.play();
             }
             else if (page === "vote") {
                 console.log("going to click on done");
                 var isVoted = Session.get("voted");
                 if (isVoted) {
                     $('#done').click();
+                    audio = document.getElementById('audioResolve');
                 }
                 else {
                     $('#votingAlert').show();
+                    audio = document.getElementById('audioError');
+                    audio.play();
                 }
+                audio.play();
             }
             else if (page === "done") {
                 console.log("showing a confirm box");
@@ -105,21 +114,34 @@ Template.candidateInfo.rendered = function () {
             case 104:
                 // H or h: left
                 $('#left').click();
+                var audio = document.getElementById('audioPrevious');
+                audio.play();
                 break;
             case 76:
             case 108:
                 // L or l" right
                 $('#right').click();
+                var audio = document.getElementById('audioNext');
+                audio.play();
                 break;
             case 75:
             case 107:
                 // K or k: down
                 var isVoted = Session.get("voted");
+                var audio;
+                if (isVoted === true) {
+                    audio = document.getElementById('audioCancel');
+                }
+                else {
+                    audio = document.getElementById('audioCast');
+                }
+                audio.play();
                 Session.set("voted", !isVoted);
                 $('.active').toggleClass("selected");
                 $('.active .carousel-selection').toggleClass("checked");
                 $('#candidate:not(.active)').removeClass("selected");
                 $('#candidate:not(.active) .carousel-selection').removeClass("checked");
+
                 break;
             default:
                 break;
